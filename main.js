@@ -13,7 +13,7 @@ const ini = require('./ini_base.js');
 ini.ini_base();
 
 var app = express();
-app.use('/',express.static(__dirname+'/doc/library/public'));
+//app.use('/',express.static(__dirname+'/doc/library/public'));
 app.use(parser.json());
 app.use(parser.urlencoded({extend:false}));
 app.use('/service',rut);
